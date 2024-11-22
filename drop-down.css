@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(kuagi.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.menu {
+  background-color: #0d92f4;
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline-flex;
+  color: white;
+  list-style: none;
+  width: 120px;
+  padding: 15px;
+  margin: 15px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+.home,
+.menu ul li:hover {
+  background-color: #77cdff;
+  border-radius: 3px;
+}
+.menu .bx {
+  margin-right: 4px;
+}
+
+.bxs-chevron-right {
+  float: right;
+}
+.menu ul li:hover .submenu-1 {
+  display: block;
+  position: absolute;
+  background-color: #0d92f4;
+  margin-top: 35px;
+  margin-left: -15px;
+}
+
+.menu ul li:hover .submenu-1 ul li {
+  display: block;
+  margin: 10px;
+  width: 150px;
+  background: transparent;
+  padding: 10px;
+  border-bottom: 1px dotted white;
+  text-align: left;
+}
+.menu ul li:hover .submenu-1 ul li:last-child {
+  border-bottom: none;
+}
+.menu ul li:hover .submenu-1 ul li:hover {
+  color: #77cdff;
+}
+.submenu-1,
+.submenu-2 {
+  display: none;
+}
+
+.menu ul li:hover .submenu-2 {
+  display: block;
+  position: absolute;
+  background-color: #0d92f4;
+  margin-top: 35px;
+  margin-left: -15px;
+}
+.menu ul li:hover .submenu-2 ul li {
+  display: block;
+  margin: 10px;
+  width: 150px;
+  background: transparent;
+  padding: 10px;
+  border-bottom: 1px dotted white;
+  text-align: left;
+}
+.menu ul li:hover .submenu-2 ul li:last-child {
+  border-bottom: none;
+}
+.menu ul li:hover .submenu-2 ul li:hover {
+  color: #77cdff;
+}
+
+.subsub {
+  display: none;
+}
+.hover-me:hover .subsub {
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: #0d92f4;
+}
